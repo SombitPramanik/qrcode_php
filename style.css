@@ -1,0 +1,93 @@
+:root {
+    --back-color: #333335;
+    --text-color: #a0a0a0;
+    --dark-text-color: black;
+    --link-color: #66d9ef;
+    --Button-background: #cf61d1;
+    --button-hover-color: #ffd700;
+}
+
+body {
+    text-align: center;
+    scroll-behavior: smooth !important;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--back-color);
+    color: var(--text-color);
+}
+
+main {
+
+    margin: 1em;
+    margin-top: 4em;
+    text-transform: capitalize;
+}
+/* Your existing styles here */
+
+.popup {
+    display: flex;
+    border-radius: 10em;
+    padding: 4vh;
+    box-shadow: 2px 2px 25px 20px rgba(80, 220, 216, 0.5);
+    margin-top: 30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    /* border: 2px solid red; */
+    animation: popupFade 1s forwards, popupGrow 1s forwards;
+}
+h2{
+    text-align: center;
+    /* top = 10px, right = 20px, bottom = 30px, left = 40px */
+    /* margin: 10px 20px 30px 40px; */
+    text-transform: uppercase;
+}
+.popup-content {
+    margin: 0em 2em 0em 2em;
+    /* display: flex; */
+    overflow: hidden;
+    text-align: center;
+    /* margin-left: 5vh; */
+    /* border: 2px solid green; */
+    width: 85% !important;
+    height: 80% !important;
+    transition: opacity 1s;
+}
+
+@keyframes popupFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popupGrow {
+    from {
+        transform: scale(0.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.popup.active {
+    opacity: 1;
+}
+
+button {
+    background-color: var(--Button-background);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#options{
+
+    margin: .5em 1em .5em 1em;
+    border-radius: 2em;
+    width: 40vw;
+    height: 5vh;
+}
