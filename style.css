@@ -17,7 +17,6 @@ body {
 }
 
 main {
-
     margin: 1em;
     margin-top: 4em;
     text-transform: capitalize;
@@ -36,6 +35,12 @@ main {
     /* border: 2px solid red; */
     animation: popupFade 1s forwards, popupGrow 1s forwards;
 }
+button a{
+    color: black !important;
+    text-decoration-line: none;
+    text-decoration: none !important;
+}
+
 h2{
     text-align: center;
     /* top = 10px, right = 20px, bottom = 30px, left = 40px */
@@ -90,4 +95,35 @@ button {
     border-radius: 2em;
     width: 40vw;
     height: 5vh;
+}
+
+
+
+.qr-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.qr-code {
+    margin: 0 auto;
+}
+
+.download-button {
+    background-color: var(--Button-background);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+/* 
+    display: block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; */
 }
