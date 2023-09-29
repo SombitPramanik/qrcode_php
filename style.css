@@ -35,6 +35,11 @@ main {
     /* border: 2px solid red; */
     animation: popupFade 1s forwards, popupGrow 1s forwards;
 }
+@media screen and (min-width:300px) and (max-width:768px) {
+    .popup{
+        border-radius: 1em !important;
+    }
+}
 button a{
     color: black !important;
     text-decoration-line: none;
