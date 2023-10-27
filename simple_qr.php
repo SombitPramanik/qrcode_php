@@ -11,7 +11,7 @@ if (isset($_POST["submit"])) {
     $qrCodeFileName = "qrcode/" . md5($qrCodeData) . ".png";
     QRcode::png($link, $qrCodeFileName, QR_ECLEVEL_L, 10, 2);
 
-    $query = "INSERT INTO users VALUES ('','$user_name','$link')";
+    $query = "INSERT INTO users VALUES ('$user_name','$link')";
     mysqli_query($conn, $query);
 
     // header('location: index.php');
